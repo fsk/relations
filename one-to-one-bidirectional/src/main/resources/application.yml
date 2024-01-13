@@ -1,0 +1,18 @@
+server:
+  port: 7072
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/one2onebidirectional
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddlAuto: create-drop
+    showSql: true
+    properties:
+      hibernate:
+        #format_sql: true
+    database: postgresql
+    databasePlatform: org.hibernate.dialect.PostgreSQLDialect
